@@ -1,0 +1,131 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Descrição para SEO -->
+    <meta name="description" content="Entre em contato com a M.A Peças e Acessórios para solicitar orçamentos e tirar dúvidas. Atendimento rápido e personalizado." />
+
+    <title>Contato - Moto Peças 2 Irmãos</title>
+
+    <!-- Importação do Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Importação da biblioteca de ícones FontAwesome -->
+    <script src="https://kit.fontawesome.com/49f6171adc.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="flex flex-col min-h-screen justify-between">
+
+    <!-- Container principal -->
+    <div>
+
+        <!-- Topo da página com endereço -->
+        <div class="bg-slate-300 text-slate-600 text-sm py-2 px-4">
+            R. Rua São Leonardo, N° 192 - Santa Terezinha, Fazenda Rio Grande - PR, 83829-328
+        </div>
+
+        <!-- Cabeçalho com logo e informações de contato -->
+        <div class="py-6 flex lg:flex-row bg-black flex-col lg:justify-between items-center">
+            <!-- Logo -->
+            <div class="px-10">
+                <img src="./IMAGENS/M.A PEÇAS E ACESSORIOSTEX2.2.png" alt="Logo Moto Peças 2 Irmãos">
+            </div>
+
+            <!-- Informações de telefone e horário -->
+            <ul class="flex md:flex-row flex-col md:gap-4 lg:justify-center items-center text-zinc-800 font-bold text-xl lg:mr-4">
+                <li class="flex items-center justify-center">
+                    <a class="p-4 text-white hover:bg-slate-800 flex flex-row items-center space-x-2" href="#">
+                        <img src="./IMAGENS/telefone.png" class="w-7" alt="Ícone Telefone" />
+                        <span>(41) 9-8862-0589</span>
+                    </a>
+                </li>
+                <li class="flex items-center justify-center">
+                    <a class="p-4 text-white hover:bg-slate-800 flex flex-row items-center space-x-2" href="#">
+                        <img src="./IMAGENS/relogio.png" class="w-7" alt="Ícone Relógio" />
+                        <span>Seg - Sex: 08:00 - 19:00 | <br class="block sm:hidden"><span class="inline sm:inline">Sab: 08:00 - 15:00</span></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Menu de navegação -->
+        <div class="bg-slate-500">
+            <ul class="flex flex-row justify-center text-xs md:text-base">
+                <!-- Link para Home -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300" href="index.html">Home</a>
+                </li>
+                <!-- Link para Quem Somos -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300" href="sobre.html">Quem Somos</a>
+                </li>
+                <!-- Link para Serviços -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300" href="servicos.html">Serviços</a>
+                </li>
+                <!-- Link para Como Chegar -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300" href="local.html">Como Chegar</a>
+                </li>
+                <!-- Link para Contato -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300" href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Seção de contato com imagem de fundo -->
+        <div class="relative w-full h-[500px]">
+            <!-- Imagem de fundo -->
+            <img class="object-cover object-center w-full h-full" src="IMAGENS/fundo 1.jpeg" alt="Imagem de fundo">
+
+            <!-- Sobreposição com efeito blur -->
+            <div class="absolute inset-0 backdrop-blur-sm flex items-center justify-center">
+                <!-- Formulário de contato -->
+                <form id="formContato" class="bg-white/30 p-8 rounded-lg shadow-lg backdrop-blur-md w-full max-w-lg">
+                    <h2 class="text-2xl font-bold mb-6 text-center">Fale Conosco</h2>
+
+                    <!-- Campo Nome -->
+                    <label class="block mb-2">Nome:</label>
+                    <input type="text" id="nome" class="w-full p-2 mb-4 border rounded" required>
+
+                    <!-- Campo Email -->
+                    <label class="block mb-2">Email:</label>
+                    <input type="email" id="email" class="w-full p-2 mb-4 border rounded" required>
+
+                    <!-- Campo Mensagem -->
+                    <label class="block mb-2">Mensagem:</label>
+                    <textarea id="mensagem" class="w-full p-2 mb-4 border rounded" required></textarea>
+
+                    <!-- Botão Enviar -->
+                    <button type="submit" class="bg-black text-white px-4 py-2 rounded hover:scale-110 transition-transform duration-300 hover:bg-slate-800">
+                        Enviar
+                    </button>
+
+                    <!-- Mensagem de Sucesso -->
+                    <p id="mensagemSucesso" class="text-black text-center mt-4 hidden">Mensagem enviada com sucesso!</p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botão flutuante do WhatsApp -->
+    <div class="fixed bottom-4 right-4 z-50">
+        <a href="https://wa.me/5541988620589" target="_blank">
+            <img class="w-[50px] hover:scale-125 transition-transform duration-300" src="./IMAGENS/whatsapp.png" alt="Fale comigo no WhatsApp" title="Como posso ajudar" />
+        </a>
+    </div>
+
+    <!-- Rodapé da página -->
+    <div class="bg-slate-100 text-slate-500 text-sm py-2 p-4 text-center">
+        R. Rua São Leonardo, N° 192 - Santa Terezinha, Fazenda Rio Grande - PR, 83829-328
+    </div>
+
+    <!-- Importação do arquivo JavaScript -->
+    <script src="js/formulario.js"></script>
+
+</body>
+
+</html>

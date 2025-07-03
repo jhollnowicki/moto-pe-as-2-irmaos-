@@ -4,9 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Moto Peças 2 Irmãos</title>
+
+    <!-- Importação do Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Importação da biblioteca de ícones FontAwesome -->
     <script src="https://kit.fontawesome.com/49f6171adc.js" crossorigin="anonymous"></script>
+
     <style>
+        /* Estilo para o botão fixo do WhatsApp */
         .whatsapp {
             position: fixed;
             bottom: 30px;
@@ -14,81 +20,119 @@
             z-index: 9999;
         }
     </style>
-
 </head>
 
 <body>
+
+    <!-- Estrutura principal da página -->
     <div class="flex flex-col h-screen max-h-screen">
-        <div class="bg-slate-300 text-slate-500 text-sm py-2 px-4"> R. Rua São Leonardo, N° 192 - Santa Terezinha,
-            Fazenda
-            Rio Grande - PR, 83829-328
+
+        <!-- Topo da página com endereço -->
+        <div class="bg-slate-300 text-slate-500 text-sm py-2 px-4">
+            R. Rua São Leonardo, N° 192 - Santa Terezinha, Fazenda Rio Grande - PR, 83829-328
         </div>
 
-        <div class=" py-6 flex lg:flex-row bg-black flex-col lg:justify-between items-center ">
-            <div class="px-4  "><img class="" src="./IMAGENS/logo 4.png"></div>
+        <!-- Cabeçalho com logo e informações de contato -->
+        <div class="py-6 flex lg:flex-row bg-black flex-col lg:justify-between items-center">
+            <!-- Logo -->
+            <div class="px-10">
+                <img class="" src="./IMAGENS/M.A PEÇAS E ACESSORIOSTEX2.2.png">
+            </div>
+
+            <!-- Informações de telefone e horário -->
             <ul
-                class="flex md:flex-row flex-col md:gap-4 lg:justify-center items-center  text-zinc-800= font-bold text-xl lg:mr-4">
+                class="flex md:flex-row flex-col md:gap-4 lg:justify-center items-center text-zinc-800 font-bold text-xl lg:mr-4">
                 <li class="flex items-center justify-center">
-                    <a class="p-4 text-white hover:bg-slate-800 flex flex-row items-center space-x-2 " href="#">
-                        <img src="./IMAGENS/telefone.png" class=" w-7 " alt="Ícone" />
+                    <a class="p-4 text-white hover:bg-slate-800 flex flex-row items-center space-x-2" href="#">
+                        <img src="./IMAGENS/telefone.png" class="w-7" alt="Ícone" />
                         <span>(41) 9-8862-0589</span>
                     </a>
-
                 </li>
                 <li class="flex items-center justify-center">
-                    <a class="p-4 text-white hover:bg-slate-800 flex flex-row items-center space-x-2  " href="#">
-                        <img src="./IMAGENS/relogio.png" class=" w-7" alt="Ícone" />
-                        <span>Seg - Sex: 08:00 - 19:00 | 
-                            <br class="block sm:hidden">
+                    <a class="p-4 text-white hover:bg-slate-800 flex flex-row items-center space-x-2" href="#">
+                        <img src="./IMAGENS/relogio.png" class="w-7" alt="Ícone" />
+                        <span>Seg - Sex: 08:00 - 19:00 | <br class="block sm:hidden">
                             <span class="inline sm:inline">Sab: 08:00 - 15:00</span>
                         </span>
                     </a>
-
                 </li>
             </ul>
         </div>
 
+        <!-- Menu de navegação -->
         <div class="bg-slate-500">
-            <ul class="flex flex-row justify-center text-xs md:text-base ">
-                <li class="flex"><a class="p-4 text-black hover:bg-slate-600" href="index.html ">Home</a></li>
-                <li class="flex"><a class="p-4 text-black hover:bg-slate-600" href="sobre.html">Quem Somos </a></li>
-                <li class="flex"><a class="p-4 text-black hover:bg-slate-600" href="servicos.html">Serviços </a></li>
-                <li class="flex"><a class="p-4 text-black hover:bg-slate-600" href="local.html">Como Chegar</a></li>
+            <ul class="flex flex-row justify-center text-xs md:text-base">
+                <!-- Link para a página Home -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300"
+                        href="index.html">Home</a>
+                </li>
+                <!-- Link para a página Quem Somos -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300"
+                        href="sobre.html">Quem Somos</a>
+                </li>
+                <!-- Link para a página Serviços -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300"
+                        href="servicos.html">Serviços</a>
+                </li>
+                <!-- Link para a página Como Chegar -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300"
+                        href="local.html">Como Chegar</a>
+                </li>
+                <!-- Link para a página Contato -->
+                <li class="flex">
+                    <a class="p-4 text-black hover:bg-slate-600 hover:scale-110 transition-transform duration-300"
+                        href="contato.html">Contato</a>
+                </li>
             </ul>
         </div>
 
+        <!-- Seção de apresentação com fundo -->
         <div class="relative flex-1 overflow-hidden z-10 min-h-screen">
 
+            <!-- Imagem de fundo -->
             <img class="object-cover object-center w-full min-h-full" src="IMAGENS/fundo sobre.jpg" />
+
+            <!-- Sobreposição de efeito blur -->
             <div class="absolute inset-0 backdrop-blur-sm">
+
+                <!-- Conteúdo centralizado -->
                 <div class="flex items-center justify-center w-full min-h-full overflow-auto">
                     <p
                         class="md:w-[80%] lg:w-[60%] w-[90%] bg-slate-700/60 text-white p-4 sm:p-6 md:p-8 text-center text-xl sm:text-2xl md:text-3xl break-words overflow-wrap break-words max-w-full">
-
-                        A Moto Peças 2 Irmãos tem se destacado desde 2019, oferecendo serviços com excelência,
+                        <!-- Texto sobre a empresa -->
+                        A M.A Peças e Acessórios tem se destacado desde 2019, oferecendo serviços com excelência,
                         transparência e experiência no setor de moto peças. Atendemos com orgulho toda a região de
                         Fazenda Rio Grande, sempre buscando a satisfação dos nossos clientes. Agradecemos pela confiança
                         de todos e continuamos focados em oferecer o melhor atendimento e serviços de qualidade.
                         Solicite um orçamento conosco, será um prazer atendê-lo!
-
                     </p>
                 </div>
+
             </div>
         </div>
+
     </div>
 
-    <div class="whatsapp">
+    <!-- Botão fixo do WhatsApp -->
+    <div class="fixed bottom-4 right-4 z-50">
         <a href="https://wa.me/5541988620589" target="_blank">
-            <img src=".//IMAGENS/whatsapp.png" width="50" alt="Fale comigo no WhatsApp"
-                title="Fale comigo no WhatsApp" />
+            <img class="w-[50px] hover:scale-125 transition-transform duration-300" src="./IMAGENS/whatsapp.png"
+                alt="Fale comigo no WhatsApp" title="Como posso ajudar" />
         </a>
-
     </div>
-    <div class="bg-slate-100 text-slate-500 text-sm py-2 p-4"> R. Rua São Leonardo, N° 192 - Santa Terezinha, Fazenda
-    Rio Grande - PR, 83829-328
-  </div>
+
+    <!-- Rodapé da página -->
+    <div class="bg-slate-100 text-slate-500 text-sm py-2 p-4">
+        R. Rua São Leonardo, N° 192 - Santa Terezinha, Fazenda Rio Grande - PR, 83829-328
+    </div>
 
 </body>
+
+<!-- Importação do JavaScript externo -->
 <script src=".//JS/index.js"></script>
 
 </html>
