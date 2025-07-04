@@ -22,10 +22,10 @@
     </style>
 </head>
 
-<body>
+<body class="min-h-screen flex flex-col">
 
     <!-- Estrutura principal da página -->
-    <div class="flex flex-col min-h-screen">
+    <div class="flex flex-col min-h-screen justify-between">
 
         <!-- Topo da página com endereço -->
         <div class="bg-slate-300 text-slate-500 text-sm py-2 px-4 text-center">
@@ -91,48 +91,50 @@
         </div>
 
         <!-- Seção de apresentação com fundo -->
-        <div class="relative flex-grow overflow-hidden z-10">
+        <div
+            class="relative min-h-[500px] sm:min-h-[500px] md:min-h-[600px] lg:min-h-[700px] xl:min-h-[750px] flex items-center justify-center overflow-hidden z-10">
 
             <!-- Imagem de fundo -->
-            <img class="object-cover object-center w-full min-h-full" src="IMAGENS/fundo sobre.jpg" />
+            <img class="absolute inset-0 object-cover w-full h-full" src="IMAGENS/fundo sobre.jpg" />
 
             <!-- Sobreposição de efeito blur -->
-            <div class="absolute inset-0 backdrop-blur-sm">
+            <div class="absolute inset-0 backdrop-blur-sm flex items-center justify-center p-4">
 
-                <!-- Conteúdo centralizado -->
-                <div class="flex items-center justify-center w-full min-h-full overflow-auto">
-                    <p
-                        class="md:w-[80%] lg:w-[60%] w-[90%] bg-slate-700/60 text-white p-4 sm:p-6 md:p-8 text-center text-xl sm:text-2xl md:text-3xl break-words overflow-wrap break-words max-w-full">
+                <!-- Conteúdo centralizado com padding responsivo -->
+                <div
+                    class="bg-slate-700/60 text-white py-4 sm:py-6 md:py-8 px-4 sm:px-8 md:px-12 text-center w-[95%] sm:w-[85%] md:w-[75%] lg:w-[65%] xl:w-[60%]">
+                    <p class="text-sm sm:text-base md:text-xl lg:text-2xl xl:text-3xl leading-relaxed break-words">
+
                         <!-- Texto sobre a empresa -->
                         A M.A Peças e Acessórios tem se destacado desde 2019, oferecendo serviços com excelência,
                         transparência e experiência no setor de moto peças. Atendemos com orgulho toda a região de
                         Fazenda Rio Grande, sempre buscando a satisfação dos nossos clientes. Agradecemos pela confiança
                         de todos e continuamos focados em oferecer o melhor atendimento e serviços de qualidade.
                         Solicite um orçamento conosco, será um prazer atendê-lo!
+
                     </p>
                 </div>
 
             </div>
         </div>
 
-    </div>
+        <!-- Botão flutuante do WhatsApp ajustado para mobile -->
+        <div class="fixed right-4 sm:right-6 md:right-8 z-50" id="whatsappContainer" style="bottom: 20px;">
+            <a href="https://wa.me/5541988620589" target="_blank">
+                <img id="whatsappBtn"
+                    class="w-[40px] sm:w-[50px] md:w-[60px] hover:scale-125 transition-transform duration-300"
+                    src="./IMAGENS/whatsapp.png" alt="Fale comigo no WhatsApp" title="Como posso ajudar" />
+            </a>
+        </div>
 
-    <!-- Botão fixo do WhatsApp -->
-    <div class="fixed bottom-4 right-4 z-50">
-        <a href="https://wa.me/5541988620589" target="_blank">
-            <img class="w-[50px] hover:scale-125 transition-transform duration-300" src="./IMAGENS/whatsapp.png"
-                alt="Fale comigo no WhatsApp" title="Como posso ajudar" />
-        </a>
-    </div>
+        <!-- Rodapé da página -->
+        <div id="rodape" class="bg-slate-100 text-slate-500 text-sm py-2 p-4 text-center mt-auto">
+            R. Rua São Leonardo, N° 192 - Santa Terezinha, Fazenda Rio Grande - PR, 83829-328
+        </div>
 
-    <!-- Rodapé da página -->
-    <div class="bg-slate-100 text-slate-500 text-sm py-2 p-4 text-center">
-        R. Rua São Leonardo, N° 192 - Santa Terezinha, Fazenda Rio Grande - PR, 83829-328
-    </div>
-
+        <!-- Importação do JavaScript externo -->
+        <script src="./js/index.js"></script>
+        <script src="./js/whatsapp-float.js"></script>
 </body>
-
-<!-- Importação do JavaScript externo -->
-<script src=".//JS/index.js"></script>
 
 </html>

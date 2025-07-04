@@ -99,69 +99,73 @@
 
   <!-- Seção de serviços oferecidos -->
   <div class="m-4 p-4">
-  <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4">
-    <!-- Item de serviço -->
-    <li class="flex items-center justify-start">
-      <a class="p-2 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
-        <img class="mix-blend-multiply w-12 sm:w-14 md:w-16" src="./IMAGENS/disco-de-embreagem (2).png" alt="Ícone" />
-        <span class="text-xl">EMBREAGEM</span>
-      </a>
-    </li>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-x-8 gap-y-4">
+      <!-- Item de serviço -->
+      <li class="flex items-center justify-start">
+        <a class="p-2 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
+          <img class="mix-blend-multiply w-12 sm:w-14 md:w-16" src="./IMAGENS/disco-de-embreagem (2).png" alt="Ícone" />
+          <span class="text-xl">EMBREAGEM</span>
+        </a>
+      </li>
 
-    <li class="flex items-center justify-start">
-      <a class="p-2 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
-        <img src="./IMAGENS/oleo.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16" alt="Ícone" />
-        <span class="text-xl">TROCA DE OLEO</span>
-      </a>
-    </li>
+      <li class="flex items-center justify-start">
+        <a class="p-2 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
+          <img src="./IMAGENS/oleo.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16" alt="Ícone" />
+          <span class="text-xl">TROCA DE OLEO</span>
+        </a>
+      </li>
 
-    <li class="flex items-center justify-start">
-      <a class="p-4 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
-        <img src="./IMAGENS/MECANICA EM GERAL.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16" alt="Ícone" />
-        <span class="text-xl">MECANICA EM GERAL</span>
-      </a>
-    </li>
+      <li class="flex items-center justify-start">
+        <a class="p-4 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
+          <img src="./IMAGENS/MECANICA EM GERAL.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16" alt="Ícone" />
+          <span class="text-xl">MECANICA EM GERAL</span>
+        </a>
+      </li>
 
-    <li class="flex items-center justify-start">
-      <a class="p-4 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
-        <img src="./IMAGENS/ELETRICA.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16" alt="Ícone" />
-        <span class="text-xl">ELETRICA</span>
-      </a>
-    </li>
+      <li class="flex items-center justify-start">
+        <a class="p-4 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
+          <img src="./IMAGENS/ELETRICA.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16" alt="Ícone" />
+          <span class="text-xl">ELETRICA</span>
+        </a>
+      </li>
 
-    <li class="flex items-center justify-start">
-      <a class="p-4 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
-        <img src="./IMAGENS/RELAÇÃO.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16" alt="Ícone" />
-        <span class="text-xl">RELAÇÃO</span>
-      </a>
-    </li>
+      <li class="flex items-center justify-start">
+        <a class="p-4 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
+          <img src="./IMAGENS/RELAÇÃO.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16" alt="Ícone" />
+          <span class="text-xl">RELAÇÃO</span>
+        </a>
+      </li>
 
-    <li class="flex items-center justify-start">
-      <a class="p-4 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
-        <img src="./IMAGENS/PEÇAS E ACESSORIOS.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16 transition-all" alt="Ícone" />
-        <span class="text-xl">PEÇAS E ACESSORIOS</span>
-      </a>
-    </li>
-  </ul>
-</div>
+      <li class="flex items-center justify-start">
+        <a class="p-4 text-black hover:bg-slate-300 flex items-center gap-4 font-bold" href="#">
+          <img src="./IMAGENS/PEÇAS E ACESSORIOS.png" class="mix-blend-multiply w-12 sm:w-14 md:w-16 transition-all"
+            alt="Ícone" />
+          <span class="text-xl">PEÇAS E ACESSORIOS</span>
+        </a>
+      </li>
+    </ul>
+  </div>
 
 
-  <!-- Botão fixo do WhatsApp -->
-  <div class="fixed bottom-4 right-4 z-50">
+  <!-- Botão flutuante do WhatsApp ajustado para mobile -->
+ <div class="fixed right-4 sm:right-6 md:right-8 z-50" id="whatsappContainer" style="bottom: 20px;">
     <a href="https://wa.me/5541988620589" target="_blank">
-      <img id="whatsappBtn" class="w-[50px] hover:scale-125 transition-transform duration-300"
+      <img id="whatsappBtn" class="w-[40px] sm:w-[50px] md:w-[60px] hover:scale-125 transition-transform duration-300"
         src="./IMAGENS/whatsapp.png" alt="Fale comigo no WhatsApp" title="Como posso ajudar" />
     </a>
   </div>
 
   <!-- Rodapé da página -->
-  <div class="bg-slate-100 text-slate-500 text-sm py-2 px-4 text-center">
+  <div id="rodape" class="bg-slate-100 text-slate-500 text-sm py-2 p-4 text-center mt-auto">
     R. Rua São Leonardo, N° 192 - Santa Terezinha, Fazenda Rio Grande - PR, 83829-328
   </div>
 
+  <!-- Importação do JavaScript externo -->
+  <script src="./js/index.js"></script>
+  <script src="./js/whatsapp-float.js"></script>
+
 </body>
 
-<!-- Importação do JavaScript externo -->
-<script src=".//JS/index.js"></script>
+
 
 </html>
