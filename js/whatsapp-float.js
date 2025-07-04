@@ -2,10 +2,13 @@ document.addEventListener('DOMContentLoaded', function () {
     const whatsappContainer = document.getElementById('whatsappContainer');
     const rodape = document.getElementById('rodape');
 
+    // Verifica se o container do WhatsApp existe
+    if (!whatsappContainer) return;
+
     // Se estiver na página 'local.html', oculta o botão
     if (window.location.pathname.includes('local.html')) {
         whatsappContainer.style.display = 'none';
-        return; // para a execução, já que não precisa ajustar mais nada
+        return; // Para a execução, já que não precisa ajustar mais nada
     }
 
     // Função que ajusta o botão para não invadir o rodapé
@@ -14,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const windowHeight = window.innerHeight;
 
         if (rodapeRect.top < windowHeight) {
-            whatsappContainer.style.bottom = `${windowHeight - rodapeRect.top + 20}px`; // sobe 20px acima do rodapé
+            whatsappContainer.style.bottom = `${windowHeight - rodapeRect.top + 20}px`; // Sobe 20px acima do rodapé
         } else {
-            whatsappContainer.style.bottom = '20px'; // posição padrão
+            whatsappContainer.style.bottom = '20px'; // Posição padrão
         }
     }
 
     window.addEventListener('scroll', ajustarPosicaoBotao);
     window.addEventListener('resize', ajustarPosicaoBotao);
 
-    ajustarPosicaoBotao(); // chama ao carregar a página
+    ajustarPosicaoBotao(); // Chama ao carregar a página
 });
