@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (!whatsappContainer) return;
 
     // Se estiver na página 'local.html', oculta o botão
-    if (window.location.pathname.includes('local.html')) {
+    if (window.location.href.includes('local.html')) {
         whatsappContainer.style.display = 'none';
         return; // Para a execução, já que não precisa ajustar mais nada
     }
@@ -17,14 +17,14 @@ document.addEventListener('DOMContentLoaded', function () {
         const windowHeight = window.innerHeight;
 
         if (rodapeRect.top < windowHeight) {
-            whatsappContainer.style.bottom = `${windowHeight - rodapeRect.top + 20}px`; // Sobe 20px acima do rodapé
+            whatsappContainer.style.bottom = `${windowHeight - rodapeRect.top + 20}px`;
         } else {
-            whatsappContainer.style.bottom = '20px'; // Posição padrão
+            whatsappContainer.style.bottom = '20px';
         }
     }
 
     window.addEventListener('scroll', ajustarPosicaoBotao);
     window.addEventListener('resize', ajustarPosicaoBotao);
 
-    ajustarPosicaoBotao(); // Chama ao carregar a página
+    ajustarPosicaoBotao();
 });
